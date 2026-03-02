@@ -1,0 +1,9 @@
+1. settings set target.run-args arg1 arg2 ...
+2. breakpoint set --name main
+3. next
+4. step
+5. continue
+6. expression x (or p x), expression 1+2
+7. display x
+8. frame variable
+9. quit

@@ -1,0 +1,5 @@
+.DS_Store
+
+# Exclude the two book PDFs
+1 C/C Programming A Modern Approach (K. N. King) (Z-Library).pdf
+2 Notes/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf

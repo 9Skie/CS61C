@@ -1,0 +1,7 @@
+1. clean all the filees? the `-rm -rf core *.o` one
+2. all: $(BINARIES)?
+3. CC=gcc
+4. CFLAGS=-ggdb -Wall -std=c99
+5. ?
+6. Unix?
+7. 32
