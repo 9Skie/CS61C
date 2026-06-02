@@ -1,1 +1,1 @@
-Uh... the note covers 100% of this video's content, no note needed.
+Uh... the reading covers 100% of this video's content, no note needed.

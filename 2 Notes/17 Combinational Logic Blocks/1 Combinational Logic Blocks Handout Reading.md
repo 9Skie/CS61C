@@ -81,4 +81,39 @@ So we stick an XOR on each bit of B, wire the other input to SUB, and boom: SUB=
 
 ![[Screenshot 2026-06-02 at 7.40.42 PM.png|400]]
 
-Uh... this image did leak an answer for overflow, which, is to determine if 
+Uh... this image did leak an answer for overflow, which, is to determine if the carry into the MSB differs from the carry out of the MSB.
+
+## Overflow
+
+Overflow means the result of signed arithmetic doesn't fit, and from such, your first instinct might be "overflow = final carry-out is 1", but that isn't true.
+
+- `0111 + 0001 = 1000` (7+1=-8): overflow, carry-out is **0**
+- `1111 + 1111 = 1110` (-1+-1=-2): no overflow, carry-out is **1**
+
+Trace `0111 + 0001`:
+
+```
+  0 1 1 1   (7)
++ 0 0 0 1   (1)
+-----------
+c:  1 1 1    ← carries between bits
+  1 0 0 0   (-8, wrong!)
+```
+
+Carry into MSB = 1, carry out = 0. They differ → overflow.
+
+Trace `1111 + 1111`:
+
+```
+  1 1 1 1   (-1)
++ 1 1 1 1   (-1)
+-----------
+c:1 1 1 1    ← carries
+1 1 1 1 0   (drop extra → 1110 = -2 ✓)
+```
+
+Carry into MSB = 1, carry out = 1. They match → no overflow.
+
+If the lower bits push a carry *into* the MSB but the MSB doesn't push one *out*, the sign flipped unexpectedly. 
+
+If both happen or neither happen, the sign is fine. XOR is literally "are these two bits different?" So one XOR gate on the leftmost full adder gives you overflow.
