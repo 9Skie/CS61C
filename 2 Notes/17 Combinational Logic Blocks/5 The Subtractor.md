@@ -1,0 +1,1 @@
+Uh... the reading covers 100% of this video's content, no note needed.
