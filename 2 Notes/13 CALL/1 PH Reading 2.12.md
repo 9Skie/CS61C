@@ -9,10 +9,9 @@ If we recall the stage of compilation, it goes as such:
 3. The linker takes the machine language, and other imported code (like from libraries of other files) and combines it into an executable
 4. The loader is used for loading the executable actually onto memory.
 
-![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 10.jpg|500]]
+![[110 Learning/112 CS/122 Basics/2 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 16.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=255&rect=81,444,548,796|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.255]]
-
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=255&rect=89,449,536,786|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.255]]
 
 But... I think it's not explained very well in it's details, it goes through a bit of history, saying how programs before usually written in assembly as compilers were inefficient in using the limited memory at the time.
 
@@ -57,6 +56,6 @@ Java addressed this portability problem with the idea of “write once, run anyw
 
 Instead of compiling directly to native machine code, Java source code is compiled into an intermediate representation called Java bytecode. This bytecode is designed to run on a Java Virtual Machine (JVM), which acts as an abstraction layer between the program and the underlying hardware. Each platform implements its own JVM, translating bytecode into native instructions for that specific architecture at runtime. As a result, the same compiled Java program can run on different hardware platforms without recompilation, as long as a compatible JVM exists.
 
-![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 11.jpg|500]]
+![[110 Learning/112 CS/122 Basics/2 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 17.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=268&rect=74,526,553,728|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.268]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=268&rect=76,524,537,723|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.268]]
