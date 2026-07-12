@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/9Skies/Documents/100 Personal/110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 CS61C/3 Code/Labs/lab01/hello'
+relocations:     []
+...

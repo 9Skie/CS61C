@@ -1,6 +1,6 @@
 2.6
 
-> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=206&selection=35,0,42,3&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.206]]
+> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=206&selection=35,0,42,3&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.206]]
 > > Although the first computers operated on full words, it soon became clear that it was useful to operate on fields of bits within a word or even on individual bits. Examining characters within a word, each of which is stored as 8 bits, is one example of such an operation (see Section 2.9). 
 
 1 word = 8 bytes, the book uses registers that store 64 bits.
@@ -9,7 +9,7 @@ These guys already existed in C, so it's just a matter of translation between th
 
 ![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 1.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=207&rect=99,538,530,669&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.207]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=207&rect=99,538,530,669&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.207]]
 
 And, that weird syntax of `slli` is _shift right logical immediate_, it's just how RISC-V decided to name these bit shifts.
 
@@ -41,7 +41,7 @@ Like this instruction:
 beq rs1, rs2, L1
 ```
 
-> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=211&selection=26,0,42,1&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.211]]
+> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=211&selection=26,0,42,1&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.211]]
 > > This instruction means go to the statement labeled L1 if the value in register rs1 equals the value in register rs2. The mnemonic beq stands for branch if equal.
 
 We can see how this branching is basically a if statement, also, here's an example of how it can be used in a while loop.
@@ -82,5 +82,5 @@ And we are talking about how overflow can be detected on a computer, with the fo
 
 ![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 2.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=373&rect=103,308,528,425&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.373]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=373&rect=103,308,528,425&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.373]]
 

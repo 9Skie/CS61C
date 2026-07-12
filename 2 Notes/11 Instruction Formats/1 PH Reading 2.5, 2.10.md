@@ -1,6 +1,6 @@
 2.5
 
-> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=195&selection=6,0,9,62&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.195]]
+> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=195&selection=6,0,9,62&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.195]]
 > > Instructions are kept in the computer as a series of high and low electronic signals and may be represented as numbers. In fact, each piece of an instruction can be considered as an individual number, and placing these numbers side by side forms the instruction. 
 
 Isn't it amazing sometimes what comes out from a computer? All these 0s and 1s making up some the greatest stuff in the world.
@@ -15,7 +15,7 @@ In binary, it looks something like this:
 
 ![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 4.jpg|300]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=196&rect=87,608,508,691&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.196]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=196&rect=87,608,508,691&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.196]]
 
 Each of these segments is a _field_:
 - the 1st, 4th, 6th field tells the RISC-V CPU it's an addition instruction
@@ -27,7 +27,7 @@ More generally, a RISC-V instruction of R-type looks like such.
 
 ![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 5.jpg|300]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=198&rect=45,598,551,750&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.198]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=198&rect=45,598,551,750&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.198]]
 
 However... you can sort of already see the downside of a instruction type like this, how would you do offsets? You can't, as there's just not enough bits to store informations about offsets, and therefore are forced to turn to another type of instruction.
 
@@ -35,7 +35,7 @@ I-Insructions have a general look like this:
 
 ![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 6.jpg|300]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=199&rect=62,534,536,640&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.199]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=199&rect=62,534,536,640&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.199]]
 
 And they allow those 12 bits entirely to be used as 'offsets', which means we can have a range of `address +- 2048 bytes` of distance, like this instruction here:
 
@@ -50,7 +50,7 @@ There's a lot of these instruction types... we'll go over them in the class, but
 
 2.10
 
-> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=239&selection=3,0,5,38&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.239]]
+> [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=239&selection=3,0,5,38&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.239]]
 > > Although keeping all RISC-V instructions 32 bits long simplifies the hardware, there are times where it would be convenient to have 32bit or larger constants or addresses. 
 
 So, to overcome this problem, RISC-V would break down loading into an 'upper' and 'lower' part.
@@ -77,7 +77,7 @@ The unconditional jump uses its own special format, the UJ-Format, 7 bit opcode,
 
 ![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 8.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=241&rect=61,366,534,445&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.241]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=241&rect=61,366,534,445&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.241]]
 
 But, this raises a problem, a conditional branch in RISC-V does not have enough bits to encode a full memory address — even 20 bits would only allow $2^{20}$ possible byte addresses, which is far too small compared to a 64-bit address space.
 
@@ -116,7 +116,7 @@ If 10 == 0, we fall through to the next instruction which is an unconditional ju
 
 Outside of what we've already talked about, there's still other addressing modes.
 
- > [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=244&selection=50,0,73,37&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.244]]
+ > [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=244&selection=50,0,73,37&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.244]]
 > > 1. Immediate addressing, where the operand is a constant within the instruction itself. 
 > > 2. Register addressing, where the operand is a register. 
 > > 3. Base or displacement addressing, where the operand is at the memory location whose address is the sum of a register and a constant in the instruction. 
@@ -125,6 +125,6 @@ Outside of what we've already talked about, there's still other addressing modes
 
 ![[110 Learning/112 CS/112.2 Basics/112.2.3 What is a Computer?/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 9.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=246&rect=72,481,556,797&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.246]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=246&rect=72,481,556,797&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.246]]
 
 Hm... I guess we'll see these along as we go through the class

@@ -1,6 +1,6 @@
 But why pointers? Why give this xtra layer of confusion to ourselves in coding? One of the examples is changing the values of variables passed to a function.
 
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=276&selection=24,0,72,16&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.247]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=276&selection=24,0,72,16&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.247]]
 > > Pointers offer a solution to this problem: instead of passing a variable x as the argument to a function, we’ll supply &x, a pointer to x. We’ll declare the corresponding parameter p to be a pointer. When the function is called, p will have the value &x, hence *p (the object that p points to) will be an alias for x. Each appearance of *p in the body of the function will be an indirect reference to x, allowing the function both to read x and to modify it
 
 ## Without Pointers

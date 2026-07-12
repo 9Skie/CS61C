@@ -77,7 +77,7 @@ height = 5;
 printf("Height: %d", height)
 ```
 
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=48&selection=135,0,177,58&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.19]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=48&selection=135,0,177,58&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.19]]
 > > %d is a placeholder indicating where the value of height is to be filled in during printing. Note the placement of \n just after %d, so that printf will advance to the next line after printing the value of height. %d works only for int variables; to print a float variable, we’d use %f instead. By default, %f displays a number with six digits after the decimal point.
 > 
 > 

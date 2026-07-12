@@ -6,7 +6,7 @@ A conversion specification is a placeholder representing a value to be filled in
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library).jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=67&rect=185,491,502,630&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.38]]
+[[C Programming A Modern Approach.pdf#page=67&rect=185,491,502,630&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.38]]
 
 The ordinary characters acted normally, while the converted specifications are replaced by the values of the variables.
 

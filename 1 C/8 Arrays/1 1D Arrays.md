@@ -1,4 +1,4 @@
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=190&selection=9,0,21,73&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.161]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=190&selection=9,0,21,73&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.161]]
 > > So far, the only variables we’ve seen are scalar: capable of holding a single data item. C also supports aggregate variables, which can store collections of values. There are two kinds of aggregates in C: arrays and structures. This chapter shows how to declare and use arrays, both one-dimensional (Section 8.1) and multidimensional (Section 8.2). Section 8.3 covers C99’s variable-length arrays.
 
 Well, the infamous... oh we aren't working with memory yet, we'll get there later.

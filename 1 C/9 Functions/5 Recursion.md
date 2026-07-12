@@ -21,7 +21,7 @@ int sum(int k) {
 }
 ```
 
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=233&selection=78,0,80,28&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.204]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=233&selection=78,0,80,28&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.204]]
 > > Some programming languages rely heavily on recursion, while others don’t even allow it. C falls somewhere in the middle: it allows recursion, but most C programmers don’t use it that often
 
 

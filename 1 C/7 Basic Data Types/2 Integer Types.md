@@ -1,6 +1,6 @@
 We've known about them when looking at how data types are represented in binary, so I'm not going to retell the story again of unsigned, signed integers.
 
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=155&selection=38,0,58,8&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.126]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=155&selection=38,0,58,8&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.126]]
 > > C’s integer types come in different sizes. The int type is usually 32 bits, but may be 16 bits on older CPUs. Since some programs require numbers that are too large to store in int form, C also provides long integers. At times, we may need to conserve memory by instructing the compiler to store a number in less space than normal; such a number is called a short integer.
 
 Here is a table denoting for the range of different integer types 

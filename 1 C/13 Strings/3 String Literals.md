@@ -34,7 +34,7 @@ For example, this is the string literal 'abc' in memory.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 9.jpg|300]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=308&rect=319,343,409,380|C Programming A Modern Approach (K. N. King) (Z-Library), p.279]]
+[[C Programming A Modern Approach.pdf#page=308&rect=319,343,409,380|C Programming A Modern Approach (K. N. King) (Z-Library), p.279]]
 
 ---
 ## Operating on String Literals

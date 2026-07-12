@@ -16,13 +16,13 @@ Originally, after the execution of the first 2 statements, p points to a memory 
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 15.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=452&rect=315,574,416,638|C Programming A Modern Approach (K. N. King) (Z-Library), p.423]]
+[[C Programming A Modern Approach.pdf#page=452&rect=315,574,416,638|C Programming A Modern Approach (K. N. King) (Z-Library), p.423]]
 
 But, when we set `p = q`, both variables point to the memory block `q` points to, and there are no variables that point to the original memory block for `p`.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 16.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=452&rect=316,492,416,551|C Programming A Modern Approach (K. N. King) (Z-Library), p.423]]
+[[C Programming A Modern Approach.pdf#page=452&rect=316,492,416,551|C Programming A Modern Approach (K. N. King) (Z-Library), p.423]]
 
 We can't access it, and so we can't change/get values inside of it, and it's just sitting there lost in memory, taking up space.
 

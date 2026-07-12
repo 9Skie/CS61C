@@ -12,7 +12,7 @@ We can include either built in C libraries, or our own files (we need file paths
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 25.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=380&rect=194,344,534,470|C Programming A Modern Approach (K. N. King) (Z-Library), p.351]]
+[[C Programming A Modern Approach.pdf#page=380&rect=194,344,534,470|C Programming A Modern Approach (K. N. King) (Z-Library), p.351]]
 
 This can share functions, macros & type definitions, and even variables? Wait what variables?
 

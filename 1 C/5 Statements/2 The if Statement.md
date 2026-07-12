@@ -1,4 +1,3 @@
-
 ## The If
 
 In C, an if statement looks something like this:
