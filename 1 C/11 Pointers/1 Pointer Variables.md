@@ -6,7 +6,7 @@ Each byte has a unique address to distinguish it from the other bytes in memory,
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 2.jpg|150]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=271&rect=293,508,404,673|C Programming A Modern Approach (K. N. King) (Z-Library), p.242]]
+[[C Programming A Modern Approach.pdf#page=271&rect=293,508,404,673|C Programming A Modern Approach (K. N. King) (Z-Library), p.242]]
 
 ---
 ## Memory Addresses
@@ -57,7 +57,7 @@ int *ptr_age = &age; // A pointer variable for the int datatype, stores the ad
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 3.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=272&rect=315,119,422,154|C Programming A Modern Approach (K. N. King) (Z-Library), p.243]]
+[[C Programming A Modern Approach.pdf#page=272&rect=315,119,422,154|C Programming A Modern Approach (K. N. King) (Z-Library), p.243]]
 
 Effectively, printing both out is the same thing, `ptr_age` and `&age`
 

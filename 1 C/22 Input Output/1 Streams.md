@@ -1,4 +1,4 @@
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=568&selection=9,0,15,57&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.539]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=568&selection=9,0,15,57&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.539]]
 > > C’s input/output library is the biggest and most important part of the standard library. As befits its lofty status, we’ll devote an entire chapter (the longest in the book) to the <stdio.h> header, the primary repository of input/output functions.
 
 Most of what C's input output is about dealing with 'streams', a flow of bytes between a program and an input/output (I/O) device, like a keyboard or screen.
@@ -11,7 +11,7 @@ By default, `<stdio.h>` provides three standard streams ready to use.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 20.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=570&rect=257,610,471,671&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.541]]
+[[C Programming A Modern Approach.pdf#page=570&rect=257,610,471,671&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.541]]
 
 But right now, we will concentrate on how streams connect with files in C.
 
@@ -45,14 +45,14 @@ Take for example when we want to store the number 32767 into a file.
 
  ![[C Programming A Modern Approach (K. N. King) (Z-Library) 21.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=571&rect=231,271,489,312&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.542]]
+[[C Programming A Modern Approach.pdf#page=571&rect=231,271,489,312&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.542]]
 
 
 - in a binary file it would look like:
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 22.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=571&rect=305,204,411,236&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.542]]
+[[C Programming A Modern Approach.pdf#page=571&rect=305,204,411,236&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.542]]
 
 
 Keep that in mind when we do any file operations.

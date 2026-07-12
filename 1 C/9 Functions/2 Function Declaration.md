@@ -46,7 +46,7 @@ double average(double a, double b){
 }
 ```
 
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=220&selection=93,0,120,5&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.191]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=220&selection=93,0,120,5&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.191]]
 > > When the compiler encounters the first call of average in main, it has no information about average: it doesn’t know how many parameters average has, what the types of these parameters are, or what kind of value average returns. Instead of producing an error message, though, the compiler assumes that average returns an int value
 
 This, is an implicit declaration.

@@ -146,7 +146,7 @@ As you can see, we had to make space in the stack to store those values.
 
 ![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy) 3.jpg|500]]
 
-[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy).pdf#page=223&rect=99,367,522,602|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.223]]
+[[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=223&rect=99,367,522,602|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface (David A. Patterson, John L. Hennessy), p.223]]
 
 
 This is the assembly code:

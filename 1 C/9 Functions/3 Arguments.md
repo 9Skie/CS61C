@@ -1,4 +1,4 @@
-> [!PDF|yellow] [[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=222&selection=64,1,71,74&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.193]]
+> [!PDF|yellow] [[C Programming A Modern Approach.pdf#page=222&selection=64,1,71,74&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.193]]
 > > In C, arguments are passed by value: when a function is called, each argument is evaluated and its value assigned to the corresponding parameter. Since the parameter contains a copy of the argument’s value, any changes made to the parameter during the execution of the function don’t affect the argument. 
 
 Like in this example:

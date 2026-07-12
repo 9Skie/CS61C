@@ -21,7 +21,7 @@ Structures and unions differ in just one way: the members of a structure are sto
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 14.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=425&rect=269,122,450,376|C Programming A Modern Approach (K. N. King) (Z-Library), p.396]]
+[[C Programming A Modern Approach.pdf#page=425&rect=269,122,450,376|C Programming A Modern Approach (K. N. King) (Z-Library), p.396]]
 
 Members of a union are accessed in the same way as members of a structure. However, since all members share the same memory, changing one will affect the others. Only the **last assigned member** holds a valid value.
 

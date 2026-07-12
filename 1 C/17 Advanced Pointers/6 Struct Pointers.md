@@ -32,13 +32,13 @@ This code initializes a `first` pointer, and creates a node in the heap memory.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 17.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=456&rect=191,125,536,255|C Programming A Modern Approach (K. N. King) (Z-Library), p.427]]
+[[C Programming A Modern Approach.pdf#page=456&rect=191,125,536,255|C Programming A Modern Approach (K. N. King) (Z-Library), p.427]]
 
 Then, we inserted all the values and pointers to their correct place.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 18.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=457&rect=181,269,533,677|C Programming A Modern Approach (K. N. King) (Z-Library), p.428]]
+[[C Programming A Modern Approach.pdf#page=457&rect=181,269,533,677|C Programming A Modern Approach (K. N. King) (Z-Library), p.428]]
 
 If you are wondering how `sizeof(struct node)` works... it returns:
 - The total number of bytes required to store one struct Node in memory (which, is made up of the primitive data types), including any padding added for alignment.

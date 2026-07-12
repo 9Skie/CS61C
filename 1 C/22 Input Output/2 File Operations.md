@@ -23,14 +23,14 @@ Modes matter for opening the file, for text files, we can pick these modes to op
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 23.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=573&rect=234,225,479,312&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.544]]
+[[C Programming A Modern Approach.pdf#page=573&rect=234,225,479,312&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.544]]
 
 
 For binary files, we have to explicitly tell C the file is in a binary format with the `b` character on top of all these modes.
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 24.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=574&rect=218,579,508,670&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.545]]
+[[C Programming A Modern Approach.pdf#page=574&rect=218,579,508,670&color=yellow|C Programming A Modern Approach (K. N. King) (Z-Library), p.545]]
 
 ---
 ## Closing Files

@@ -24,7 +24,7 @@ The members of a structure are stored in memory in the order in which they’re 
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 12.jpg|150]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=407&rect=303,137,431,387|C Programming A Modern Approach (K. N. King) (Z-Library), p.378]]
+[[C Programming A Modern Approach.pdf#page=407&rect=303,137,431,387|C Programming A Modern Approach (K. N. King) (Z-Library), p.378]]
 
 It's totally fine if members of another structure collide in their naming schemes, but structs cannot have the same name.
 
@@ -55,7 +55,7 @@ The value in the initializer must appear in the same order as the members of the
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 13.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=409&rect=286,543,396,615|C Programming A Modern Approach (K. N. King) (Z-Library), p.380]]
+[[C Programming A Modern Approach.pdf#page=409&rect=286,543,396,615|C Programming A Modern Approach (K. N. King) (Z-Library), p.380]]
 
 ---
 ## Accessing Structure Members

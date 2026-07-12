@@ -10,7 +10,7 @@ This instructs the preprocessor to open the file named `stdio.h` and bring it's 
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 19.jpg|200]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=345&rect=302,375,414,535|C Programming A Modern Approach (K. N. King) (Z-Library), p.316]]
+[[C Programming A Modern Approach.pdf#page=345&rect=302,375,414,535|C Programming A Modern Approach (K. N. King) (Z-Library), p.316]]
 
 You need to use angle brackets `< >` for standard libraries and double quotes `" "` for your own files.
 

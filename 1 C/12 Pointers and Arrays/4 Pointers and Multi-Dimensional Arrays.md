@@ -2,7 +2,7 @@ If we recall how multi-dimensional arrays rare stored in memory, they are all co
 
 ![[C Programming A Modern Approach (K. N. King) (Z-Library) 8.jpg|500]]
 
-[[C Programming A Modern Approach (K. N. King) (Z-Library).pdf#page=296&rect=262,294,465,346|C Programming A Modern Approach (K. N. King) (Z-Library), p.267]]
+[[C Programming A Modern Approach.pdf#page=296&rect=262,294,465,346|C Programming A Modern Approach (K. N. King) (Z-Library), p.267]]
 
 As it's all just a 1-D array in memory, we can use a for loop to increment the pointer to`a[0][0]` row * col times.
 
