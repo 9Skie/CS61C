@@ -6,7 +6,6 @@ There are 4 steps in this process:
 3. producing machine language
 4. creating object files
 
-
 ## Directives
 
 There are two kinds of lines in an assembly file:
