@@ -7,3 +7,4 @@ It's used for 2 instructions:
 Similar to JAL, the immediate generator must recognize the U-type instruction format and rearrange/sign-extend its immediate bits correctly.
 
 ![[Screenshot 2026-07-13 at 5.17.08 PM.jpg|500]]
+
