@@ -62,8 +62,3 @@ The following diagram illustrates how CPU accesses a 4-byte chuck of data with 4
 If the data is misaligned of 4-byte boundary, CPU has to perform extra work to access the data: load 2 chucks of data, shift out unwanted bytes then combine them together. This process definitely slows down the performance and wastes CPU cycle just to get right data from memory.
 
 ![[Pasted image 20260207105014.png|500]]
-
----
-# Size of
-
-You can know the size of a data type, in bytes of a data type. You can even use this in structs!

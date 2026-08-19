@@ -1,0 +1,1 @@
+Really weird note, wasn't expecting a lecture on different types of storages, not my type.
