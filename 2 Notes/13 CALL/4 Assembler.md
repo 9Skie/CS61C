@@ -72,7 +72,7 @@ To solve this problem, we have to make 2 passes of all the assembly code:
 
 A **symbol table** is a data structure created by the assembler that records the names and locations of symbols defined in the program. A symbol can be a label, a variable, or a function name. For each symbol, the table stores information such as the symbol’s name, the section it belongs to (for example .text or .data), and its offset within that section.
 
-![[Pasted image 20260303162025.png|500]]
+![[Pasted image 20260303162026.png|500]]
 
 The symbol table allows symbols to be referenced **across different object files**. If a symbol is declared global (for example using .globl), its name and location are exported in the object file’s symbol table. During linking, the linker reads the symbol tables of all object files and matches references to the corresponding definitions.
 

@@ -30,7 +30,3 @@ It is called a ROM because the mapping is fixed by the processor design. The CPU
 Physically, this does not always have to be built as a literal memory chip. The same behavior can be implemented using combinational logic gates, such as decoders, AND gates, and OR gates. 
 
 From the programmer’s perspective, though, it is useful to think of it as a ROM lookup table: instruction in, control signals out.
-
-
-
-

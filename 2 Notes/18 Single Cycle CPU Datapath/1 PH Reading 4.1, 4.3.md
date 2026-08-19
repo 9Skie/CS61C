@@ -20,7 +20,7 @@ Lets take review of the simple ALU instructions in how it would physically work:
 
 Down here, they make an abstraction of the flow of data through the simplified ALU only processor.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 2.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 2.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=478&rect=95,538,536,774&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.478]]
 
@@ -33,7 +33,7 @@ Biggggg chart, but if we break it down, it's not a lot:
 
 But like... we didn't really show 'how' this decision is made, we have just said 'its possible to have these different instructions to be executed', well, a Multiplexer can do the routing for us on which exact instruction variant gets executed.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 3.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 3.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=480&rect=90,445,539,780&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.480]]
 
@@ -60,13 +60,13 @@ So we need:
 - instruction addresses -> instructions
 - addition
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 4.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 4.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=488&rect=89,547,534,685&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.488]]
 
 And they combine this way in the logic that we just described above, this is universal to any instruction:
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 5.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 5.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=489&rect=85,354,540,789&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.489]]
 
@@ -79,7 +79,7 @@ Now, consider the R-format instructions, which:
 So now, we need the given R-format instruction to determine which register is read by register number, it needs to output written register data from those registers, we need to determine which ALU operation needs to be done, if a write operation is happening or not, and which register is to be written to.
 - As there are 32 registers in RISC-V, each register number is 5 bits ($32 = 2^5$)
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 6.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 6.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=490&rect=96,158,535,347&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.490]]
 
@@ -101,14 +101,14 @@ A **store** (`sd x1, offset(x2)`) needs to:
 
 So, we need 2 more components, an address first which we access to write data to or read data from, and the ability to generate an immediate.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 7.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 7.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=492&rect=91,245,536,470&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.492]]
 
 
 Combine these parts tog ether first, we have the data path for memory instructions and R-type instructions.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 8.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 8.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=497&rect=100,561,526,768&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.497]]
 
@@ -125,13 +125,13 @@ So beyond our existing data path, this adds a second adder for PC + offset, a sh
 
 The logic looks like this:
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 9.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 9.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=495&rect=99,462,532,774&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.495]]
 
 
 Combine everything together for the biggg data path, and we have completed the simple data path for a simple CPU!
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 10.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 10.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=499&rect=88,484,537,781&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.499]]

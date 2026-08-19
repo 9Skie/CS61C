@@ -20,7 +20,7 @@ Each stage seems independent from each other? Hm... how can we use this property
 > > 5. When your roommate is done, start over with the next dirty load.
 > 
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 18.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 18.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=521&rect=86,610,531,781&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.521]]
 
@@ -29,7 +29,7 @@ But say, while the dryer is drying clothe set 1, why cant we have clothe set 2 b
 > [!PDF|yellow] [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=519&selection=43,7,46,68&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.519]]
 > > As soon as the washer is finished with the first load and placed in the dryer, you load the washer with the second dirty load. When the first load is dry, you place it on the table to start folding, move the wet load to the dryer, and put the next dirty load into the washer.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 19.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 19.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=521&rect=86,419,533,612&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.521]]
 
@@ -44,11 +44,12 @@ Pipelining is an implementation technique in which multiple instructions are ove
 > > 5. Write the result into a register (if necessary). Hence, the RISC-V pipeline we explore in this chapter has five stages.
 > > The following example shows that pipelining speeds up instruction execution just as it speeds up the laundry.
 
-![[110 Learning/112 CS/112.2 SWE/1 Working With Computers/2 What is a Computer/2 UCB CS61C/2 Notes/attachments/PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 20.jpg|500]]
+![[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface 20.jpg|500]]
 
 [[PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface.pdf#page=524&rect=99,474,530,776&color=yellow|PH - Computer Organization and Design RISC-V Edition The Hardware Software Interface, p.524]]
 
-This does not necessarily make one individual instruction faster. A single instruction still has to pass through all five stages. It may even take slightly longer because pipeline registers are added between stages. The benefit is not lower latency for one instruction. The benefit is higher throughput: the CPU can finish more instructions over the same amount of time.
+This does not necessarily make one individual instruction faster. A single instruction still has to pass through all five stages, it may even take slightly longer because pipeline registers are added between stages. 
+- The benefit is higher throughput: the CPU can finish more instructions over the same amount of time.
 
 But there are many, many complexities that come with trying to pipeline instructions this way.... there are 3 situations that prevent starting the next instruction directly in the next cycle.
 
