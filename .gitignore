@@ -27,3 +27,7 @@ PH - Computer Organization and Design RISC-V Edition*.pdf
 # Local tool outputs
 4 Labs/lab01/segfault
 4 Labs/lab01/no_segfault
+
+# Official solutions (kept locally, not published)
+*_sol.pdf
+*[Ss]olution*.pdf
