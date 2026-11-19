@@ -1,0 +1,106 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/5/CPU.hdl
+/**
+ * The Hack Central Processing unit (CPU).
+ * Parses the binary code in the instruction input and executes it according to the
+ * Hack machine language specification. In the case of a C-instruction, computes the
+ * function specified by the instruction. If the instruction specifies to read a memory
+ * value, the inM input is expected to contain this value. If the instruction specifies
+ * to write a value to the memory, sets the outM output to this value, sets the addressM
+ * output to the target address, and asserts the writeM output (when writeM = 0, any
+ * value may appear in outM).
+ * If the reset input is 0, computes the address of the next instruction and sets the
+ * pc output to that value. If the reset input is 1, sets pc to 0.
+ * Note: The outM and writeM outputs are combinational: they are affected by the
+ * instruction's execution during the current cycle. The addressM and pc outputs are
+ * clocked: although they are affected by the instruction's execution, they commit to
+ * their new values only in the next cycle.
+ */
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset==1) or continue executing
+                         // the current program (reset==0).
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    // You have to go review the hack language specification to get this right
+
+
+    // Instruction Decoding
+    Mux16(a=instruction, b=ALUout, sel=instruction[15], out=Ain);
+
+    // A registor is tricky!
+    // If instruction[15] = 1, Aload = 1
+    // If instruction[15] = 0, then it's instruction[5] = 1, Aload = 1, and instruction[5] = 1, Aload = 1
+    // So the logic is (NOT(instruction[15]) OR i[5])
+    Not(in=instruction[15], out=n15);
+    Or(a=n15, b=instruction[5], out=Aload);
+    ARegister(in=Ain, load=Aload, out=Ainstruct, out[0..14]=addressM);
+    Mux16(a=Ainstruct, b=inM, sel=instruction[12], out=ALUyin);
+
+    // Instruction Execution
+
+    // Bro this instruction[15] things also applies to the D registor, and jump, and destination...
+    Mux16(a=false, b=instruction, sel=instruction[15], out[0]=j0, out[1]=j1, out[2]=j2, out[3]=writeM, out[4]=Dload);
+    DRegister(in=ALUout, load=Dload, out=ALUxin);
+
+    ALU(x=ALUxin, y=ALUyin, 
+        zx=instruction[11],
+        nx=instruction[10],
+        zy=instruction[9],
+        ny=instruction[8],
+        f =instruction[7],
+        no=instruction[6],
+        out=ALUout,
+        out=outM,
+        zr=zr, 
+        ng=ng);
+
+
+    // Instruction Fetch
+    // Jumping is really weird, because jjj is 3 bits, but the PC load is 1 bit
+    // So 000 -> load = 0, 111 -> load = 1, and the rest are all conditionals
+    // This is just a massive or or or...
+
+    // My solution would've worked beautfilly if we had an 8 way Mux
+
+    //a = false, b = ng AND zr, c = zr, d = zr OR (ng AND zr), e = ng, f = NOT zr, g = ng OR zr, h = true
+    // Nand(a=ng, b=zr, out=b);           // b = ng AND zr
+    // Or(a=zr, b=b, out=d);              // d = zr OR b
+    // Not(in=zr, out=f);                 // f = NOT zr
+    // Or(a=ng, b=zr, out=g);            // g = ng OR zr
+
+    // Mux(a=false, b=b, sel=j0, out=mux0); 
+    // Mux(a=d, b=zr, sel=j0, out=mux1);
+    // Mux(a=ng, b=f, sel=j0, out=mux2);
+    // Mux(a=g, b=true, sel=j0, out=mux3);
+
+    // Mux(a=mux0, b=mux1, sel=j1, out=mux4);
+    // Mux(a=mux2, b=mux3, sel=j1, out=mux5);
+
+    // Mux(a=mux4, b=mux5, sel=j2, out=pcload);
+    // PC(in=Ainstruct, load=pcload, inc=true, reset=reset, out[0..14]=pc);
+
+    // This is someone else's code... idk why mine doesn't work correctly
+
+    And(a=j2, b=ng, out=lpc1);
+    And(a=j1, b=zr, out=lpc2);
+
+    Or(a=ng, b=zr, out=ngORzr);
+    Not(in=ngORzr, out=ngNotANDzrNot);
+    And(a=j0, b=ngNotANDzrNot, out=lpc3);
+
+    Or(a=lpc1, b=lpc2, out=lpc4);
+    Or(a=lpc3, b=lpc4, out=lpc);
+
+    PC(in=Ainstruct, reset=reset, load=lpc, inc=true, out[0..14]=pc);
+}

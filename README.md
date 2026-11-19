@@ -6,8 +6,9 @@ This repo is my record of working through CS61C: my notes, homework, labs and pr
 
 ```
 1 C/
-2 Notes/
-3 Discussions/
-4 Labs/
-5 Projects/
+2 Nand2Tetris/
+3 Notes/
+4 Discussions/
+5 Labs/
+6 Projects/
 ```

@@ -1,0 +1,31 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/3/a/RAM8.hdl
+/**
+ * Memory of eight 16-bit registers.
+ * If load is asserted, the value of the register selected by
+ * address is set to in; Otherwise, the value does not change.
+ * The value of the selected register is emitted by out.
+ */
+CHIP RAM8 {
+    IN in[16], load, address[3];
+    OUT out[16];
+
+    PARTS:
+    // So I have 8 registors
+    // And I need to Mux the output and only select the one at address
+    // But what can I do with the load? I obviously don't want all of them to load
+    // But load is just 1 variable... is there someway to make it like load[address]?
+    // DMux!
+    DMux8Way(in=load, sel=address, a=l1, b=l2, c=l3, d=l4, e=l5, f=l6, g=l7, h=l8);
+    Register(in=in, load=l1, out=t1);
+    Register(in=in, load=l2, out=t2);
+    Register(in=in, load=l3, out=t3);
+    Register(in=in, load=l4, out=t4);
+    Register(in=in, load=l5, out=t5);
+    Register(in=in, load=l6, out=t6);
+    Register(in=in, load=l7, out=t7);
+    Register(in=in, load=l8, out=t8);
+    Mux8Way16(a=t1, b=t2, c=t3, d=t4, e=t5, f=t6, g=t7, h=t8, sel=address, out=out);
+}

@@ -1,0 +1,22 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/1/Mux.hdl
+/** 
+ * Multiplexor:
+ * if (sel = 0) out = a, else out = b
+ */
+CHIP Mux {
+    IN a, b, sel;
+    OUT out;
+
+    PARTS:
+    Not(in=sel, out=nsel);
+    And(a=a, b=nsel, out=ansel);
+    And(a=sel , b=b , out=bsel);
+    Xor(a=ansel, b=bsel, out=out);
+    // If a=1 and sel=0, it should be 1, in all other cases it should be 0
+    // So I need to add a not to sel for a
+    // But the same logic doesn't apply to b
+    // For ansel and bsel, the output is 1 when they are different and 0 when same... so Xor
+}
