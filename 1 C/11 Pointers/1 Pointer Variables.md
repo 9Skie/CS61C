@@ -15,8 +15,6 @@ Simply, for any variable (and for any programming language too), when a variable
 - a value which it holds
 - a place which it's stored
 
-![[Pasted image 20260129175202.png|500]]
-
 For example, this variable `a`, that is it's name:
 - it has a value of 5
 - it's stored at address 2686732
@@ -42,9 +40,11 @@ So, as you saw we can get the memory address of a variable, we can store it in a
 
 A pointer is a variable that stores the memory address of another variable as its value.
 
+
 ### Address Operator
 
 To get the address of a variable as shown above, you need the `&` operator.
+
 
 ### The Indirection Operator
 

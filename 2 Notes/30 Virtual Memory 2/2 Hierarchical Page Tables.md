@@ -1,14 +1,13 @@
 Now that we understand how a basic page table works, we are now at another concern: size.
 
 Assume we have:
-- 20 bits for the virtual page size -> $2^20$ possible pages
+- 20 bits for the virtual page size -> $2^{20}$ possible pages
 - 4 bytes per address (32 bit computer)
 
 Then, for 1 process, it will maximumly have a page table size of:
 
  $\text{Page Table Size} = (\text{number of entries}) \times (\text{size of each entry})$
  $= 2^{20} \times 4 \text{ bytes}$
-$= 4 \times 2^{20} \text{ bytes}$
 $= 4 \text{ MiB}$
 
 Now consider a number of processes, like 100, we will realize the page table size quickly grows out of hand.
@@ -21,7 +20,7 @@ The problem with a single-level page table is that the virtual address space is 
 
 This clearly isn't very reasonable for our processes, as keeping track of memory addresses is filling up our memory, that's ridiculous! So what solutions do we have for this?
 
-We instead take a Hierarchical Page Table approach, basically splitting the table as a tree like data structure, so nstead of having one giant page table:
+We instead take a Hierarchical Page Table approach, basically splitting the table as a tree like data structure, so instead of having one giant page table:
 
 ```text
 Virtual Page Number

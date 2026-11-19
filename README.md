@@ -16,7 +16,9 @@ Current top-level structure:
 
 - `1 C/` - C language study notes and references
 - `2 Notes/` - CS61C lecture and reading notes
-- `3 Code/` - discussions, labs, and coding exercises
+- `3 Discussions/` - discussion worksheets and practice
+- `4 Labs/` - lab materials and coding exercises
+- `5 Projects/` - project materials and starter code
 
 ## Environment Setup
 1. Install a C toolchain (`gcc` or `clang`) for C exercises.

@@ -1,6 +1,6 @@
 All of what previously we've been looking at is reading from cache, and how that makes access faster compared to main memory.
 
-Now instead we'll look at 'writing' into cache, as it's also faster than writing into main memory, but we encounter new issues, which is keeping the cache and main memory consistent.
+Now instead we'll look at 'writing' into cache, as it's also faster than writing into main memory, but we encounter new issues, which is keeping the cache and main memory consistent, this is called a cache write policy.
 
 Originally, we said the cache is just a copy of main memory, which works fine for reads, but no longer for writes. But suppose the processor changes a value and writes the new value only into the cache. The cache now contains the updated value, while main memory still contains the old value. The two copies are no longer consistent.
 

@@ -3,3 +3,27 @@
 # Exclude the two book PDFs (use wildcards so renames are still ignored)
 1 C/C Programming A Modern Approach*.pdf
 2 Notes/PH - Computer Organization and Design RISC-V Edition*.pdf
+
+# Local review folders
+.review-archive/
+[Rr]eview/
+[Rr]eviews/
+[0-9]* [Rr]eview/
+[0-9]* [Rr]eviews/
+
+# Local textbooks and e-books
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+**/[Bb]ook/**/*.pdf
+**/[Bb]ooks/**/*.pdf
+**/[Tt]extbook/**/*.pdf
+**/[Tt]extbooks/**/*.pdf
+C Programming A Modern Approach*.pdf
+PH - Computer Organization and Design RISC-V Edition*.pdf
+
+# Local tool outputs
+4 Labs/lab01/segfault
+4 Labs/lab01/no_segfault

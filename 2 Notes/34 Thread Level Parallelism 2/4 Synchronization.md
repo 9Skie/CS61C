@@ -4,7 +4,7 @@ For example, imagine multiple workers editing the same document. If two workers 
 
 This is called a race condition. A race condition happens when the correctness of a program depends on the timing or ordering of multiple threads. Since threads can execute in different orders each time, the program may produce inconsistent or unexpected results.
 
-To solve this, we needsynchronization. Synchronization is the process of controlling how multiple workers access shared resources so that they do not interfere with each other.
+To solve this, we need synchronization. Synchronization is the process of controlling how multiple workers access shared resources so that they do not interfere with each other.
 
 The most common approach is using a lock. A lock ensures that only one worker can access a critical section of code or a shared resource at a time. When one worker is modifying shared data, other workers must wait until the resource becomes available.
 

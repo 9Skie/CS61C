@@ -2,7 +2,7 @@ Lets go! How to actually build hardware that runs RISC-V code!!!
 
 ![[Screenshot 2026-07-06 at 3.49.53 PM.png|500]]
 
-One side note, however, as I have personally started to look into parallel computing in [[1 Why Parallelism? Why Efficiency?]] from Stanford CS 144, there is need to acknowledge that at the moment, we are looking at the simplest level of a CPU, just parallelism at the gates level.
+One side note, however, as I have personally started to look into parallel computing in [[110 Learning/112 CS/112.2 SWE/3 Lots of Computers/1 Stanford CS149/4 Notes/1 Why Parallelism? Why Efficiency?]] from Stanford CS 144, there is need to acknowledge that at the moment, we are looking at the simplest level of a CPU, just parallelism at the gates level.
 
 ![[Screenshot 2026-07-06 at 3.48.49 PM.png|500]]
 
