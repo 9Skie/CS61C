@@ -1,37 +1,13 @@
-# UCB CS61C - Personal HW + Notes
+# [UC Berkeley CS61C: Great Ideas in Computer Architecture](https://www.learncs.site/docs/curriculum-resource/cs61c/syllabus)
 
-Notes + homework follow-along for UC Berkeley CS61C.
+This repo is my record of working through CS61C: my notes, homework, labs and projects, plus any supplementary resources I found useful for learning the material.
 
-This repository contains my personal chapter-by-chapter follow-along work for the class.
+## Layout
 
-## Original Course Attribution
-The original course material and teaching structure are from the official CS61C resources:
-- Official website: [CS61C Official Website](https://cs61c.org/)
-- Main architecture reference: *Computer Organization and Design RISC-V Edition: The Hardware/Software Interface* by David A. Patterson and John L. Hennessy
-
-I do not claim the original course content as my own. This repository is my personal learning implementation, notes, and homework-style practice while following that material.
-
-## Repository Layout
-Current top-level structure:
-
-- `1 C/` - C language study notes and references
-- `2 Notes/` - CS61C lecture and reading notes
-- `3 Discussions/` - discussion worksheets and practice
-- `4 Labs/` - lab materials and coding exercises
-- `5 Projects/` - project materials and starter code
-
-## Environment Setup
-1. Install a C toolchain (`gcc` or `clang`) for C exercises.
-2. Install Python 3 for scripts/tools used in coursework.
-3. Use the official course tooling and instructions for assignments/labs when applicable.
-
-## Running Notes
-- C exercises and notes are organized by topic and chapter.
-- CS61C notes track lecture concepts, instruction formats, and architecture topics.
-- Code folders include discussion/lab practice and related materials.
-- Book PDFs for the C text and the RISC-V text are intentionally excluded via `.gitignore`.
-
-## End Note
-This project is a homework-style follow-along learning archive built over time.
-
-This `README.md` was created/updated by Codex specifically to improve repository organization and publish-readiness. That Codex attribution applies to this README file only.
+```
+1 C/
+2 Notes/
+3 Discussions/
+4 Labs/
+5 Projects/
+```
